@@ -2,9 +2,9 @@
 
 #include "pch.h"
 #include <iostream>
-#include<stdlib.h>
-#include<math.h>
-#include<string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
 
 using namespace std;
 
