@@ -1,6 +1,8 @@
 // RSA.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include "pch.h"
+#include "RSA.h"
+#include "tools.h"
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
@@ -12,11 +14,7 @@ int x, y, n, t, i, flag;
 long int e[50], d[50], temp[50], j;
 char en[50], m[50];
 char msg[100];
-int prime(long int); //function to check for prime number
-void encryption_key();
-long int cd(long int);
-void encrypt();
-void decrypt();
+
 
 int main() {
 	// Get the first prime number
@@ -62,6 +60,9 @@ int main() {
 
 	encrypt();
 	decrypt();
+
+	waitForEnter();
+
 	return 0;
 } //end of the main program
 
